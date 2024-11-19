@@ -3,6 +3,7 @@ const express = require('express');
 const cors = require('cors');
 const connectDB = require('./config/db');
 const participantRoutes = require('./routes/participantRoutes');
+const leaderboardRoutes = require('./routes/leaderboardRoutes');
 
 const app = express();
 
@@ -15,6 +16,7 @@ app.use(express.json());
 
 // Routes
 app.use('/api', participantRoutes);
+app.use('/api/leaderboard', leaderboardRoutes);
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
