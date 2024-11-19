@@ -1,0 +1,139 @@
+/* Leaderboard */
+.leaderboard {
+    margin: 20px auto;
+    max-width: 900px; /* Wider for better spacing */
+    text-align: center;
+    font-family: 'Poppins', sans-serif; /* Sleek and modern font */
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d); /* Vibrant gradient */
+    padding: 30px;
+    border-radius: 20px; /* Increased border radius for a more modern look */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Enhanced shadow for a floating effect */
+    overflow: hidden;
+}
+
+.leaderboard h1 {
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-size: 2.5rem; /* Larger font size for the heading */
+    text-transform: uppercase;
+    letter-spacing: 3px; /* Spacing for a clean title */
+    position: relative;
+}
+
+.leaderboard h1::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.leaderboard table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.1); /* Light semi-transparent table background */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border-radius: 10px; /* Rounded corners for table */
+}
+
+.leaderboard th, .leaderboard td {
+    padding: 15px;
+    text-align: left;
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.leaderboard th {
+    background: linear-gradient(to right, #ff5f6d, #ffc371);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+.leaderboard tr {
+    transition: background 0.3s ease;
+}
+
+.leaderboard tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.05); /* Subtle contrast for even rows */
+}
+
+.leaderboard tr:hover {
+    background-color: rgba(255, 255, 255, 0.15); /* Slight glow on hover */
+}
+
+.leaderboard tr:nth-child(1) {
+    background: linear-gradient(45deg, #f8ff00, #3ad59f); /* Vibrant gold */
+    color: #000; /* Contrast for gold */
+    font-weight: bold;
+}
+
+.leaderboard tr:nth-child(2) {
+    background: linear-gradient(45deg, #e0eafc, #cfdef3); /* Sleek silver */
+    color: #000; /* Contrast for silver */
+    font-weight: bold;
+}
+
+.leaderboard tr:nth-child(3) {
+    background: linear-gradient(45deg, #f05f57, #360940); /* Modern bronze */
+    color: #000; /* Contrast for bronze */
+    font-weight: bold;
+}
+
+.leaderboard button {
+    background: linear-gradient(to right, #fc4a1a, #f7b733); /* Modern gradient button */
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+}
+
+.leaderboard button:hover {
+    transform: translateY(-3px); /* Subtle hover lift */
+    box-shadow: 0 8px 20px rgba(252, 74, 26, 0.5); /* Enhanced shadow */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .leaderboard {
+        padding: 20px;
+    }
+
+    .leaderboard table {
+        font-size: 14px; /* Adjust table font size */
+    }
+
+    .leaderboard th, .leaderboard td {
+        padding: 10px;
+    }
+
+    .leaderboard button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .leaderboard {
+        padding: 15px;
+    }
+
+    .leaderboard h1 {
+        font-size: 1.5rem;
+    }
+
+    .leaderboard button {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+}

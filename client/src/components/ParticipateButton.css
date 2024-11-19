@@ -1,0 +1,20 @@
+.participate-button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .participate-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #b833ea;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  .participate-btn:hover {
+    background-color: #a123d1;
+  }
+  

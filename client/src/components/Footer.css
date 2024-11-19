@@ -1,0 +1,46 @@
+.footer {
+    background: linear-gradient(to right, #111011, #000000); /* Gradient background */
+    color: white;
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  
+  .social-media {
+    display: flex;
+  }
+  
+  .social-media a {
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-media a:hover {
+    transform: scale(1.1);
+  }
+  
+  .social-media img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .contact-details {
+    text-align: right;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    padding-top: 10px;
+    border-top: 1px solid #333;
+  }
+  

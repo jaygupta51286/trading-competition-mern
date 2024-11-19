@@ -1,0 +1,15 @@
+.meter {
+    width: 100%;
+    background: #ddd;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 30px;
+  }
+  
+  .meter-fill {
+    background: #4CAF50;
+    height: 100%;
+    border-radius: 25px 0 0 25px;
+    transition: width 0.3s ease;
+  }
+  

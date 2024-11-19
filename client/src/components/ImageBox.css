@@ -1,0 +1,42 @@
+.image-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #000000); /* Gradient background */
+  border-radius: 10px; /* Rounded corners for card effect */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  width: 100%;
+}
+
+.image-box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Rounded corners for card effect */
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column-reverse; /* Ensures ImageBox comes below Countdown */
+  }
+
+  .image-box {
+    padding: 10px;
+  }
+
+  .image-box img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-box {
+    padding: 5px;
+    margin: 10px;
+  }
+
+  .image-box img {
+    max-width: 100%;
+  }
+}

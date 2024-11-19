@@ -1,0 +1,31 @@
+.admin-login-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    background: #1a002b;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admin-login-form input,
+  .admin-login-form button {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    color: #EEE;
+  }
+  
+  .admin-login-form button {
+    background-color: #b833ea;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .admin-login-form button:hover {
+    background-color: #a123d1;
+  }
+  

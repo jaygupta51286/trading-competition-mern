@@ -1,0 +1,57 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #1a002b;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-container input,
+  .form-container button {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    color: #EEE;
+  }
+  
+  .broker-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .broker-btn {
+    flex: 1;
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+    background: #330044;
+    color: white;
+    border: none;
+    transition: background 0.3s ease;
+  }
+  
+  .broker-btn.active {
+    background: #4CAF50;
+    color: white;
+  }
+  
+  .broker-btn:hover {
+    background: #250036;
+  }
+  
+  .submit-btn {
+    padding: 10px;
+    background-color: #b833ea;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #a123d1;
+  }
+  

@@ -1,0 +1,87 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: left;
+}
+
+.header .futu {
+  color: violet; /* Violet color for "Futu" */
+}
+
+.header .re {
+  color: #FF6347; /* Different color for "re" */
+}
+
+.header .skill-lab {
+  color: white; /* White color for "Skill Lab" */
+}
+
+.header-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: auto;
+}
+
+.header-buttons .header-btn {
+  margin: 5px;
+  padding: 10px 15px;
+  background: #000000;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border-radius: 5px;
+}
+
+.header-buttons .header-btn:hover {
+  background: linear-gradient(to right,#8B008B, #000000, #8B008B);
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .header {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .header-buttons {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-buttons.open {
+    display: flex;
+  }
+
+  .header-buttons .header-btn {
+    margin: 5px 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+}
