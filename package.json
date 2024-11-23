@@ -3,18 +3,45 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-   "start": "node server.js"
+    "start": "node server/server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server/server.js",
+    "client": "npm start --prefix client",
+    "build": "npm run client && npm run server",
+    "heroku-postbuild": "npm run build"
   },
-  "keywords": [],
+  "keywords": [
+    "mern",
+    "competition",
+    "trading",
+    "fullstack"
+  ],
   "author": "Jay Gupta",
   "license": "ISC",
   "description": "Backend for Future Skill Lab competition",
   "dependencies": {
     "body-parser": "^1.20.3",
+    "compression": "^1.7.5",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
-    "mongoose": "^8.8.1"
-  }
+    "helmet": "^8.0.0",
+    "mongoose": "^8.8.1",
+    "nodemon": "^3.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jayguptanit/trading_mern_2024.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jayguptanit/trading_mern_2024/issues"
+  },
+  "homepage": "https://github.com/jayguptanit/trading_mern_2024#readme"
 }

@@ -12,7 +12,6 @@ import LeaderboardAdminPage from './components/LeaderboardAdminPage';
 import InfoSection from './components/InfoSection';
 import Footer from './components/Footer';
 import ParticipateButton from './components/ParticipateButton';
-import ParticipationMeter from './components/ParticipationMeter';
 import ImageBox from './components/ImageBox';
 import Leaderboard from './components/Leaderboard';
 import './App.css';
