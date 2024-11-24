@@ -65,7 +65,7 @@ Competition Start Date:
 Competition End Date:
 Result Declaration Date:
 Prize Distribution Date:
-Wining Criteria:
+Winning Criteria:
 Make Highest Profit
 Make maximum withdrawals of the Profit (Count Wise and Amount Wise)
 All the participants who have make the profits with the round off the decimal values. (i.e. 100.01 to 100.50 will be considered 100 and 100.51-100.99 will be considered 101)
