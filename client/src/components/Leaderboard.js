@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './Leaderboard.css';
+import config from '../config'; // Adjust the path if needed
 
 const Leaderboard = () => {
   const [leaderboard, setLeaderboard] = useState([]);
 
   const fetchLeaderboard = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/leaderboard', {
+      const response = await axios.get(`${config.API_BASE_URL}/api/leaderboard`, {
         headers: { 'Cache-Control': 'no-cache' }, // Disable cache
       });
       setLeaderboard(response.data);

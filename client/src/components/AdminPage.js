@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './AdminPage.css';
+import config from '../config'; // Adjust the path if needed
 
 const AdminPage = () => {
   const [mt5AccountNumber, setMt5AccountNumber] = useState('');
@@ -10,7 +11,7 @@ const AdminPage = () => {
   const handleFormSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/api/add-account", { mt5AccountNumber, broker });
+      const response = await axios.post(`${config.API_BASE_URL}/api/add-account`, { mt5AccountNumber, broker }); // Updated API base URL
       if (response.status === 201) {
         alert('MT5 Account Number and Broker added successfully!');
       } else {
@@ -29,7 +30,7 @@ const AdminPage = () => {
     formData.append('file', file);
 
     try {
-      const response = await axios.post("http://localhost:5000/api/leaderboard/upload", formData, {
+      const response = await axios.post(`${config.API_BASE_URL}/api/leaderboard/upload`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

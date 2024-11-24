@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './AdminPage.css';
+import config from '../config'; // Adjust the path if needed
 
 const LeaderboardAdminPage = () => {
   const [file, setFile] = useState(null);
@@ -22,7 +23,7 @@ const LeaderboardAdminPage = () => {
       try {
         const jsonData = JSON.parse(event.target.result);
         const response = await axios.post(
-          "http://localhost:5000/api/leaderboard/upload-json",
+          `${config.API_BASE_URL}/api/leaderboard/upload-json`, // Updated API base URL
           jsonData,
           { headers: { 'Content-Type': 'application/json' } }
         );
@@ -44,7 +45,7 @@ const LeaderboardAdminPage = () => {
 
   const fetchLeaderboard = async () => {
     try {
-      const response = await axios.get('/api/leaderboard');
+      const response = await axios.get(`${config.API_BASE_URL}/api/leaderboard`); // Updated API base URL
       setLeaderboard(response.data); // Update state
     } catch (error) {
       console.error('Error fetching leaderboard:', error.message);

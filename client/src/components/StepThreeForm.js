@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './StepThreeForm.css';
+import config from '../config'; // Adjust the path if needed
 
 const StepThreeForm = () => {
   const [formData, setFormData] = useState({
@@ -16,7 +17,7 @@ const StepThreeForm = () => {
   const handleFormSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/api/verify-account", formData);
+      const response = await axios.post(`${config.API_BASE_URL}/api/verify-account`, formData); // Updated API base URL
       if (response.data.verified) {
         setIsVerified(true);
         alert('Verification and registration successful!');
@@ -26,6 +27,7 @@ const StepThreeForm = () => {
       }
     } catch (error) {
       console.error('Error verifying account:', error.response?.data?.message || error.message);
+      setErrorMessage('Error verifying account.');
     }
   };
 
