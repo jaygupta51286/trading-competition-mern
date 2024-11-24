@@ -42,8 +42,7 @@ function App() {
                 </section>
               </>
             } />
-            <Route path="/how-to-join" element={<InfoSection sectionId="how-to-join" title="How to Join the Competition"
-             content={`No Registration Fee to participate the competition
+            <Route path="/how-to-join" element={<InfoSection sectionId="how-to-join" title="How to Join the Competition" content={`No Registration Fee to participate the competition
 Participant should essentially have the account under the IB of the organizer 
 To Create account under IB of the organizer follow the below process:
   Create an Account:
@@ -73,7 +72,7 @@ The only event where participants are allowed to withdraw their profits with no 
 The Only Event which is not bounded with any rules i.e. you can take any support from the community / Tools / Strategies / Team.
 `} />}
             />
-            <Route path="/Winning Criteria" element={<InfoSection sectionId="Winning Criteria" title="Conditions" content={`Make Highest Profit
+            <Route path="/conditions" element={<InfoSection sectionId="conditions" title="Winning Criteria" content={`Make Highest Profit
 Make maximum withdrawals of the Profit (Count Wise and Amount Wise)
 All the participants who have make the profits with the round off the decimal values. (i.e. 100.01 to 100.50 will be considered 100 and 100.51-100.99 will be considered 101)
 All participants who are in the tie then maximum withdrawals will be considered to finalize the winner participant.
