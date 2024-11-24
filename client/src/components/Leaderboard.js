@@ -11,14 +11,21 @@ const Leaderboard = () => {
       const response = await axios.get(`${config.API_BASE_URL}/api/leaderboard`, {
         headers: { 'Cache-Control': 'no-cache' }, // Disable cache
       });
-      setLeaderboard(response.data);
+      console.log('API Response:', response.data); // Log the response data
+      
+      // Validate that the response data is an array
+      if (Array.isArray(response.data)) {
+        setLeaderboard(response.data); // Update state if data is an array
+      } else {
+        console.error('Invalid response format:', response.data);
+      }
     } catch (error) {
       console.error('Error fetching leaderboard:', error);
     }
   };
 
   useEffect(() => {
-    fetchLeaderboard();
+    fetchLeaderboard(); // Initial fetch
   }, []);
 
   return (
