@@ -46,7 +46,12 @@ const LeaderboardAdminPage = () => {
   const fetchLeaderboard = async () => {
     try {
       const response = await axios.get(`${config.API_BASE_URL}/api/leaderboard`); // Updated API base URL
-      setLeaderboard(response.data); // Update state
+      console.log('API Response:', response.data); // Log the response data
+      if (Array.isArray(response.data)) {
+        setLeaderboard(response.data); // Update state if data is an array
+      } else {
+        console.error('Invalid response format:', response.data);
+      }
     } catch (error) {
       console.error('Error fetching leaderboard:', error.message);
     }
