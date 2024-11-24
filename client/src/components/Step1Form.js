@@ -16,7 +16,7 @@ const Step1Form = () => {
   const handleFormSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/api/register", formData);
+      const response = await axios.post(`${config.API_BASE_URL}/api/register`, formData);
       if (response.status === 201) {
         setMessage('Registration successful!');
         navigate('/step-two');
@@ -29,6 +29,7 @@ const Step1Form = () => {
       setMessage('Error registering participant.');
     }
   };
+  
 
   return (
     <div className="form-wrapper">
