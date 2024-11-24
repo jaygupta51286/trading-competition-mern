@@ -1,5 +1,5 @@
 .info-section {
-  background: linear-gradient(to bottom right, #000000, #291f29); /* Gradient background */
+  background: linear-gradient(to bottom right, #1c1c1c, #333333); /* Gradient background */
   padding: 20px;
   border-radius: 10px;
   margin: 20px;
@@ -12,6 +12,12 @@
   margin-bottom: 10px;
 }
 
-.info-section p {
+.info-section .content p {
   color: #cccccc;
+  margin-bottom: 10px;
+}
+
+.info-section .content p::before {
+  content: "• "; /* Bullet point */
+  color: #ff4081; /* Highlight color for bullet point */
 }
