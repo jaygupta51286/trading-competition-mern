@@ -42,9 +42,44 @@ function App() {
                 </section>
               </>
             } />
-            <Route path="/how-to-join" element={<InfoSection sectionId="how-to-join" title="How to Join the Competition" content="Create an Account: Click on the link Exness or Hantec Market and sign up on our partner platform. Only accounts created through this link will qualify." />} />
-            <Route path="/competition-details" element={<InfoSection sectionId="competition-details" title="Competition Details" content="Challenge Period: 1st Dec 2024 - 31st Dec 2024" />} />
-            <Route path="/why-join" element={<InfoSection sectionId="why-join" title="Why Join?" content="Gain Real Trading Experience: Improve your skills in a live market environment." />} />
+            <Route path="/how-to-join" element={<InfoSection sectionId="how-to-join" title="How to Join the Competition" content={`
+  No Registration Fee to participate the competition
+  Participant should essentially have the account under the IB of the organizer 
+  To Create account under IB of the organizer follow the below process:
+     Create an Account:
+      Exness:
+      Create New Account: 
+      Click on the link: https://one.exnesstrack.net/a/721ebw05k3
+      Change IB Partner code: Use Partner Code: 721ebw05k3
+      Hantec Market:
+      Create New Account:
+      Click on the link: https://hmarkets.com/live-account-pre-registration/?cmp=6f6y5y2k&refid=13741&ent=hm
+      And follow the process to complete the registration.
+      For help follow process video How to create account or contact support link (telegram link)
+     Deposit: Fund your account with a minimum of $100 to be eligible for the competition.
+Kindly be noted: Only accounts created through above link and accounts under the organizer’s IB will be qualified to participate the competition.
+`} />}
+            />
+            <Route path="/competition-details" element={<InfoSection sectionId="competition-details" title="Competition Details" content={`
+  Competition Start Date:
+  Competition End Date:
+  Result Declaration Date:
+  Prize Distribution Date:
+  Wining Criteria:
+  Make Highest Profit
+  Make maximum withdrawals of the Profit (Count Wise and Amount Wise)
+  All the participants who have make the profits with the round off the decimal values. (i.e. 100.01 to 100.50 will be considered 100 and 100.51-100.99 will be considered 101)
+  All participants who are in the tie then maximum withdrawals will be considered to finalize the winner participant.
+`} />}
+            />
+            <Route path="/why-join" element={<InfoSection sectionId="why-join" title="Why Join?" content={`
+By Joining this event, 
+You will be having an opportunity to make your financial dreams true.
+You will be experiencing Trading emotions and can Improve your skills in a live market environment.
+The only event where participants are allowed to withdraw their profits with no conditions.
+The Only Event which is not bounded with any rules i.e. you can take any support from the community / Tools / Strategies / Team.
+`} />}
+            />
             <Route path="/conditions" element={<InfoSection sectionId="conditions" title="Conditions" content="1st priority - Minimum 0.50 cent lot required per day (lot size: 0.01 to maximum 0.10 acceptable)." />} />
             <Route path="/step-one" element={<Step1Form />} />
             <Route path="/step-two" element={<StepTwoForm />} />

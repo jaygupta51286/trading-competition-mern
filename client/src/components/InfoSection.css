@@ -1,18 +1,17 @@
 .info-section {
-    background: linear-gradient(to bottom right, #000000, #291f29); /* Gradient background */
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px;
-    color: #f0f0f0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
-  
-  .info-section h2 {
-    color: #ff4081; /* Highlight color */
-    margin-bottom: 10px;
-  }
-  
-  .info-section p {
-    color: #cccccc;
-  }
-  
+  background: linear-gradient(to bottom right, #000000, #291f29); /* Gradient background */
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  color: #f0f0f0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.info-section h2 {
+  color: #ff4081; /* Highlight color */
+  margin-bottom: 10px;
+}
+
+.info-section p {
+  color: #cccccc;
+}

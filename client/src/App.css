@@ -7,8 +7,7 @@
 }
 
 body {
-  
-  background: linear-gradient( #000000, #291f29); /* Gradient background */
+  background: linear-gradient(#000000, #291f29); /* Gradient background */
   font-family: 'Roboto', sans-serif;
   color: #f0f0f0;
   display: flex;
@@ -22,7 +21,7 @@ a {
 }
 
 .gradient__bg {
-  background: radial-gradient(circle at 3% 25%, rgb(17, 18, 19) 0%, rgba(0, 0, 0, 1) 100% );
+  background: radial-gradient(circle at 3% 25%, rgb(17, 18, 19) 0%, rgba(0, 0, 0, 1) 100%);
 }
 
 .gradient__text {
@@ -94,8 +93,6 @@ a {
   padding: 20px;
 }
 
-
-/* Highlight Section */
 .highlight-section {
   background: linear-gradient(to bottom right, #000000, #291f29); /* Gradient background */
   padding: 20px;
@@ -189,7 +186,6 @@ a {
   }
 }
 
-
 .trading-title {
   font-size: 2.5rem;
   margin-bottom: 20px;
@@ -230,12 +226,6 @@ a {
 .info-section p {
   color: #f0f0f0;
 }
-
-
-
-
-
-
 
 .broker-buttons {
   display: flex;
