@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import './Step1Form.css';
+import config from '../config'; // Adjust the path if needed
 
 const Step1Form = () => {
   const [formData, setFormData] = useState({
@@ -29,7 +30,6 @@ const Step1Form = () => {
       setMessage('Error registering participant.');
     }
   };
-  
 
   return (
     <div className="form-wrapper">
