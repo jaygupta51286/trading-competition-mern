@@ -29,7 +29,12 @@ if (process.env.NODE_ENV === 'production') {
 connectDB();
 
 // Middleware
-app.use(cors());
+
+app.use(cors({
+  origin: 'https://future-skill-lab.onrender.com', // Allow requests from your frontend URL
+  optionsSuccessStatus: 200
+}));
+
 app.use(express.json());
 
 // Routes
