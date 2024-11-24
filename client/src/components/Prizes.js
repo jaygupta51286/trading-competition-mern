@@ -6,23 +6,33 @@ const Prizes = () => {
     <section className="prizes">
       <div className="prize-card">
         <h3>🥇 1st Prize</h3>
-        <p>$100 + 10k Funded Account, Refunded Amount if you Pass Funded Account.</p>
+        <p>A. 100 USD<br />
+           B. 10k Funded Account of the reputed funded account provider***<br />
+           C. Refund of the funded account will be of winner participant if the above funded account is passed by the participant with no time limit.</p>
       </div>
       <div className="prize-card">
         <h3>🥈 2nd Prize</h3>
-        <p>$50 + 10k Funded Account, Refunded Amount if you Pass Funded Account.</p>
+        <p>A. 50 USD<br />
+           B. 10k Funded Account of the reputed funded account provider***<br />
+           C. Refund of the funded account will be of winner participant if the above funded account is passed by the participant with no time limit.</p>
       </div>
       <div className="prize-card">
         <h3>🥉 3rd Prize</h3>
-        <p>$30 + 5k Funded Account, Refunded Amount if you Pass Funded Account.</p>
+        <p>A. 30 USD<br />
+           B. 10k Funded Account of the reputed funded account provider***<br />
+           C. Refund of the funded account will be of winner participant if the above funded account is passed by the participant with no time limit.</p>
       </div>
       <div className="prize-card">
         <h3>🏅 4th Prize</h3>
-        <p>$20 + 5k Funded Account, Refunded Amount if you Pass Funded Account.</p>
+        <p>A. 20 USD<br />
+           B. 10k Funded Account of the reputed funded account provider***<br />
+           C. Refund of the funded account will be of winner participant if the above funded account is passed by the participant with no time limit.</p>
       </div>
       <div className="prize-card">
         <h3>🎖️ 5th to 10th Prizes</h3>
-        <p>$10 each</p>
+        <p>A. 10 USD<br />
+           B. 10k Funded Account of the reputed funded account provider***<br />
+           C. Refund of the funded account will be of winner participant if the above funded account is passed by the participant with no time limit.</p>
       </div>
     </section>
   );
