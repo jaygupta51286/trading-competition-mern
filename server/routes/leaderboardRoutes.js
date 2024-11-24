@@ -12,6 +12,7 @@ router.use(cors());
 router.post('/upload-json', async (req, res) => {
   try {
     const data = req.body;
+    console.log('Received data:', data); // Log the received data
 
     // Validate data
     if (!Array.isArray(data) || data.length === 0) {
@@ -50,6 +51,7 @@ router.get('/', async (req, res) => {
 
     // Fetch leaderboard data
     const leaderboard = await Leaderboard.find({});
+    console.log('Fetched leaderboard:', leaderboard); // Log the fetched data
     res.status(200).json(leaderboard);
   } catch (error) {
     console.error('Error fetching leaderboard:', error.message);
