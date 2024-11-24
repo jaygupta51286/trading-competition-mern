@@ -14,17 +14,6 @@ const leaderboardRoutes = require('./routes/leaderboardRoutes');
 
 const app = express();
 
-// Serve static assets in production
-if (process.env.NODE_ENV === 'production') {
-  // Set static folder
-  app.use(express.static(path.join(__dirname, '../client/build')));
-
-  // Serve index.html for all non-API routes
-  app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
-  });
-}
-
 // Connect to MongoDB
 connectDB();
 
@@ -38,6 +27,17 @@ app.use(express.json());
 // Routes
 app.use('/api', participantRoutes);
 app.use('/api/leaderboard', leaderboardRoutes);
+
+// Serve static assets in production
+if (process.env.NODE_ENV === 'production') {
+  // Set static folder
+  app.use(express.static(path.join(__dirname, '../client/build')));
+
+  // Serve index.html for all non-API routes
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
+  });
+}
 
 const port = process.env.PORT || 10000;
 app.listen(port, '0.0.0.0', () => {
