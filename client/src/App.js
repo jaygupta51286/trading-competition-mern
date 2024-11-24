@@ -42,7 +42,8 @@ function App() {
                 </section>
               </>
             } />
-            <Route path="/how-to-join" element={<InfoSection sectionId="how-to-join" title="How to Join the Competition" content={`No Registration Fee to participate the competition
+            <Route path="/how-to-join" element={<InfoSection sectionId="how-to-join" title="How to Join the Competition" content={`
+No Registration Fee to participate the competition
 Participant should essentially have the account under the IB of the organizer 
 To Create account under IB of the organizer follow the below process:
   Create an Account:
@@ -59,24 +60,28 @@ To Create account under IB of the organizer follow the below process:
 Kindly be noted: Only accounts created through above link and accounts under the organizer’s IB will be qualified to participate the competition.
 `} />}
             />
-            <Route path="/competition-details" element={<InfoSection sectionId="competition-details" title="Competition Details" content={`Competition Start Date:
+            <Route path="/competition-details" element={<InfoSection sectionId="competition-details" title="Competition Details" content={`
+Competition Start Date:
 Competition End Date:
 Result Declaration Date:
 Prize Distribution Date:
 `} />}
             />
-            <Route path="/why-join" element={<InfoSection sectionId="why-join" title="Why Join?" content={`By Joining this event, 
+            <Route path="/why-join" element={<InfoSection sectionId="why-join" title="Why Join?" content={`
+By Joining this event, 
 You will be having an opportunity to make your financial dreams true.
 You will be experiencing Trading emotions and can Improve your skills in a live market environment.
 The only event where participants are allowed to withdraw their profits with no conditions.
 The Only Event which is not bounded with any rules i.e. you can take any support from the community / Tools / Strategies / Team.
 `} />}
             />
-            <Route path="/conditions" element={<InfoSection sectionId="conditions" title="Winning Criteria" content={`Make Highest Profit
+            <Route path="/winning-criteria" element={<InfoSection sectionId="winning-criteria" title="Winning Criteria" content={`
+Make Highest Profit
 Make maximum withdrawals of the Profit (Count Wise and Amount Wise)
 All the participants who have make the profits with the round off the decimal values. (i.e. 100.01 to 100.50 will be considered 100 and 100.51-100.99 will be considered 101)
 All participants who are in the tie then maximum withdrawals will be considered to finalize the winner participant.
 `} />}
+            />
             <Route path="/step-one" element={<Step1Form />} />
             <Route path="/step-two" element={<StepTwoForm />} />
             <Route path="/step-three" element={<StepThreeForm />} />
