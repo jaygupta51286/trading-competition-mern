@@ -30,14 +30,15 @@ app.use('/api/leaderboard', leaderboardRoutes);
 
 // Serve static assets in production
 if (process.env.NODE_ENV === 'production') {
-  // Set static folder
-  app.use(express.static(path.join(__dirname, '../dist/build')));
+  // Set static folder to 'client/dist' or 'client/build' (depending on your build output)
+  app.use(express.static(path.join(__dirname, '../client/dist')));
 
   // Serve index.html for all non-API routes
   app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../dist/build', 'index.html'));
+    res.sendFile(path.resolve(__dirname, '../client/dist', 'index.html'));
   });
 }
+
 
 const port = process.env.PORT || 10000;
 app.listen(port, '0.0.0.0', () => {
