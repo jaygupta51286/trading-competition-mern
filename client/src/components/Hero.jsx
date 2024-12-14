@@ -3,6 +3,8 @@ import { discount, robot3 } from "../assets";
 import GetStarted from "./GetStarted";
 import Countdown from "./Countdown";
 import ParticipateButton from "./ParticipateButton";
+import robotImage from '../assets/robot3.png';
+
 
 const Hero = () => {
   return (
@@ -37,7 +39,7 @@ const Hero = () => {
       </div>
 
       <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
-        <img src="src/assets/robot3.png" alt="billing" className="w-[100%] h-[100%] relative z-[5]" />
+        <img src={robotImage} alt="billing" className="w-[100%] h-[100%] relative z-[5]" />
 
         {/* gradient start */}
         <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
