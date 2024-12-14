@@ -1,53 +1,27 @@
 [
-  { "Rank": 1, "Name": "Arjun Sharma" },
-  { "Rank": 2, "Name": "Aisha Al-Mansoori" },
-  { "Rank": 3, "Name": "Rohan Gupta" },
-  { "Rank": 4, "Name": "Zara Khan" },
-  { "Rank": 5, "Name": "Priya Patel" },
-  { "Rank": 6, "Name": "Ali Al-Nahyan" },
-  { "Rank": 7, "Name": "Meera Reddy" },
-  { "Rank": 8, "Name": "Omar Al-Falasi" },
-  { "Rank": 9, "Name": "Ananya Iyer" },
-  { "Rank": 10, "Name": "Riyaz Siddiqui" },
-  { "Rank": 11, "Name": "Nisha Desai" },
-  { "Rank": 12, "Name": "Hassan Al-Qasimi" },
-  { "Rank": 13, "Name": "Kabir Singh" },
-  { "Rank": 14, "Name": "Fatima Al-Hashimi" },
-  { "Rank": 15, "Name": "Ishaan Verma" },
-  { "Rank": 16, "Name": "Sana Parvez" },
-  { "Rank": 17, "Name": "Raghav Nair" },
-  { "Rank": 18, "Name": "Layla Al-Maktoum" },
-  { "Rank": 19, "Name": "Tara Joshi" },
-  { "Rank": 20, "Name": "Ahmed Al-Rashid" },
-  { "Rank": 21, "Name": "Aditya Bhatt" },
-  { "Rank": 22, "Name": "Noura Al-Futtaim" },
-  { "Rank": 23, "Name": "Devansh Choudhury" },
-  { "Rank": 24, "Name": "Reem Al-Zarooni" },
-  { "Rank": 25, "Name": "Krishna Gopal" },
-  { "Rank": 26, "Name": "Kiran Ahuja" },
-  { "Rank": 27, "Name": "Zayed Al-Nuaimi" },
-  { "Rank": 28, "Name": "Ira Menon" },
-  { "Rank": 29, "Name": "Faisal Al-Kindi" },
-  { "Rank": 30, "Name": "Simran Kaur" },
-  { "Rank": 31, "Name": "Arav Mishra" },
-  { "Rank": 32, "Name": "Lina Al-Dhaheri" },
-  { "Rank": 33, "Name": "Vikram Malhotra" },
-  { "Rank": 34, "Name": "Huda Al-Suwaidi" },
-  { "Rank": 35, "Name": "Yusuf Sheikh" },
-  { "Rank": 36, "Name": "Amara Khan" },
-  { "Rank": 37, "Name": "Manav Jain" },
-  { "Rank": 38, "Name": "Mariam Al-Tayer" },
-  { "Rank": 39, "Name": "Sameer Abbas" },
-  { "Rank": 40, "Name": "Esha Kulkarni" },
-  { "Rank": 41, "Name": "Salman Ansari" },
-  { "Rank": 42, "Name": "Amina Al-Hosani" },
-  { "Rank": 43, "Name": "Harsh Trivedi" },
-  { "Rank": 44, "Name": "Alia Al-Mehairi" },
-  { "Rank": 45, "Name": "Jay Mehta" },
-  { "Rank": 46, "Name": "Noor Al-Kaabi" },
-  { "Rank": 47, "Name": "Kabir Bhatia" },
-  { "Rank": 48, "Name": "Yasmin Al-Najjar" },
-  { "Rank": 49, "Name": "Shaurya Chauhan" },
-  { "Rank": 50, "Name": "Rania Al-Mazrouei" },
-  { "Rank": 51, "Name": "Avni Sharma" }
+  {
+    "Rank": 1,
+    "Name": "Alice Johnson",
+    "Profit": 15000
+  },
+  {
+    "Rank": 2,
+    "Name": "Bob Smith",
+    "Profit": 12000
+  },
+  {
+    "Rank": 3,
+    "Name": "Charlie Davis",
+    "Profit": 9000
+  },
+  {
+    "Rank": 4,
+    "Name": "Diana Evans",
+    "Profit": 7500
+  },
+  {
+    "Rank": 5,
+    "Name": "Ethan Brown",
+    "Profit": 6000
+  }
 ]

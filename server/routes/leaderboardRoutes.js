@@ -21,12 +21,13 @@ router.post('/upload-json', async (req, res) => {
 
     // Validate and map data
     const formattedData = data.map(row => {
-      if (!row.Rank || !row.Name) {
-        throw new Error('Invalid data format. Each entry must have "Rank" and "Name".');
+      if (!row.Rank || !row.Name || !row.Profit) {
+        throw new Error('Invalid data format. Each entry must have "Rank", "Name", and "Profit".');
       }
       return {
         Rank: row.Rank,
         Name: row.Name,
+        Profit: row.Profit,
       };
     });
 

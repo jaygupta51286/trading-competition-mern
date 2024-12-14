@@ -34,7 +34,6 @@ const Leaderboard = () => {
 
   return (
     <>
-
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-gray-700 via-gray-900 to-black text-white py-6">
       <div className="w-full max-w-4xl bg-white shadow-xl rounded-lg p-8 text-gray-800">
         <h1 className="text-3xl font-bold mb-8 text-center text-gray-900">Leaderboard</h1>
@@ -43,6 +42,7 @@ const Leaderboard = () => {
             <tr className="bg-gray-200">
               <th className="px-4 py-2 text-left text-gray-800 font-semibold">Rank</th>
               <th className="px-4 py-2 text-left text-gray-800 font-semibold">Name</th>
+              <th className="px-4 py-2 text-left text-gray-800 font-semibold">Profit</th>
             </tr>
           </thead>
           <tbody>
@@ -50,6 +50,7 @@ const Leaderboard = () => {
               <tr key={index} className="even:bg-gray-100 odd:bg-white">
                 <td className="border px-4 py-2">{entry.Rank}</td>
                 <td className="border px-4 py-2">{entry.Name}</td>
+                <td className="border px-4 py-2">{entry.Profit}</td>
               </tr>
             ))}
           </tbody>

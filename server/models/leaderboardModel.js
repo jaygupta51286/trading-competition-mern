@@ -8,6 +8,10 @@ const leaderboardSchema = new mongoose.Schema({
   Name: {
     type: String,
     required: true,
+  },
+  Profit: {
+    type: Number,
+    required: true,
   }
 });
 

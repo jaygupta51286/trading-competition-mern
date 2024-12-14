@@ -93,6 +93,7 @@ const LeaderboardAdminPage = () => {
                 <tr className="bg-gray-200">
                   <th className="px-4 py-2 text-left text-gray-800 font-semibold">Rank</th>
                   <th className="px-4 py-2 text-left text-gray-800 font-semibold">Name</th>
+                  <th className="px-4 py-2 text-left text-gray-800 font-semibold">Profit</th>
                 </tr>
               </thead>
               <tbody>
@@ -100,6 +101,7 @@ const LeaderboardAdminPage = () => {
                   <tr key={index} className="even:bg-gray-100 odd:bg-white">
                     <td className="border px-4 py-2">{entry.Rank}</td>
                     <td className="border px-4 py-2">{entry.Name}</td>
+                    <td className="border px-4 py-2">{entry.Profit}</td>
                   </tr>
                 ))}
               </tbody>
