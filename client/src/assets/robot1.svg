@@ -1,0 +1,82 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0D0F26" />
+      <stop offset="100%" stop-color="#1A1D48" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bgGradient)" />
+
+  <!-- Green Bullish Candle 1 (Moving up) -->
+  <g id="bullish-candle-1">
+    <!-- Shadow -->
+    <rect x="50" y="200" width="30" height="100" fill="rgba(92, 225, 230, 0.3)">
+      <animate attributeName="y" from="200" to="100" dur="2s" begin="0s" keyTimes="0;1" keySplines="0.42 0 0.58 1" />
+    </rect>
+    <rect x="50" y="200" width="30" height="100" fill="#5CE1E6">
+      <animate attributeName="y" from="200" to="100" dur="2s" begin="0s" keyTimes="0;1" keySplines="0.42 0 0.58 1" />
+    </rect>
+    <line x1="65" y1="200" x2="65" y2="100" stroke="#5CE1E6" stroke-width="4">
+      <animate attributeName="y2" from="200" to="100" dur="2s" begin="0s" keyTimes="0;1" keySplines="0.42 0 0.58 1" />
+    </line>
+  </g>
+
+  <!-- Green Bullish Candle 2 (Moving up) -->
+  <g id="bullish-candle-2">
+    <!-- Shadow -->
+    <rect x="120" y="230" width="30" height="100" fill="rgba(92, 225, 230, 0.3)">
+      <animate attributeName="y" from="230" to="130" dur="2s" begin="2s" keyTimes="0;1" keySplines="0.42 0 0.58 1" />
+    </rect>
+    <rect x="120" y="230" width="30" height="100" fill="#5CE1E6">
+      <animate attributeName="y" from="230" to="130" dur="2s" begin="2s" keyTimes="0;1" keySplines="0.42 0 0.58 1" />
+    </rect>
+    <line x1="135" y1="230" x2="135" y2="130" stroke="#5CE1E6" stroke-width="4">
+      <animate attributeName="y2" from="230" to="130" dur="2s" begin="2s" keyTimes="0;1" keySplines="0.42 0 0.58 1" />
+    </line>
+  </g>
+
+  <!-- Red Bearish Candle 1 (Moving down) -->
+  <g id="bearish-candle-1">
+    <!-- Shadow -->
+    <rect x="190" y="150" width="30" height="100" fill="rgba(255, 65, 54, 0.3)">
+      <animate attributeName="y" from="150" to="250" dur="2s" begin="4s" keyTimes="0;1" keySplines="0.42 0 0.58 1" />
+    </rect>
+    <rect x="190" y="150" width="30" height="100" fill="#FF4136">
+      <animate attributeName="y" from="150" to="250" dur="2s" begin="4s" keyTimes="0;1" keySplines="0.42 0 0.58 1" />
+    </rect>
+    <line x1="205" y1="150" x2="205" y2="250" stroke="#FF4136" stroke-width="4">
+      <animate attributeName="y2" from="150" to="250" dur="2s" begin="4s" keyTimes="0;1" keySplines="0.42 0 0.58 1" />
+    </line>
+  </g>
+
+  <!-- Green Bullish Candle 3 (Moving up) -->
+  <g id="bullish-candle-3">
+    <!-- Shadow -->
+    <rect x="260" y="200" width="30" height="100" fill="rgba(92, 225, 230, 0.3)">
+      <animate attributeName="y" from="200" to="100" dur="2s" begin="6s" keyTimes="0;1" keySplines="0.42 0 0.58 1" />
+    </rect>
+    <rect x="260" y="200" width="30" height="100" fill="#5CE1E6">
+      <animate attributeName="y" from="200" to="100" dur="2s" begin="6s" keyTimes="0;1" keySplines="0.42 0 0.58 1" />
+    </rect>
+    <line x1="275" y1="200" x2="275" y2="100" stroke="#5CE1E6" stroke-width="4">
+      <animate attributeName="y2" from="200" to="100" dur="2s" begin="6s" keyTimes="0;1" keySplines="0.42 0 0.58 1" />
+    </line>
+  </g>
+
+  <!-- Red Bearish Candle 2 (Moving down) -->
+  <g id="bearish-candle-2">
+    <!-- Shadow -->
+    <rect x="320" y="120" width="30" height="100" fill="rgba(255, 65, 54, 0.3)">
+      <animate attributeName="y" from="120" to="220" dur="2s" begin="8s" keyTimes="0;1" keySplines="0.42 0 0.58 1" />
+    </rect>
+    <rect x="320" y="120" width="30" height="100" fill="#FF4136">
+      <animate attributeName="y" from="120" to="220" dur="2s" begin="8s" keyTimes="0;1" keySplines="0.42 0 0.58 1" />
+    </rect>
+    <line x1="335" y1="120" x2="335" y2="220" stroke="#FF4136" stroke-width="4">
+      <animate attributeName="y2" from="120" to="220" dur="2s" begin="8s" keyTimes="0;1" keySplines="0.42 0 0.58 1" />
+    </line>
+  </g>
+</svg>

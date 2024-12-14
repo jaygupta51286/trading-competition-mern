@@ -1,66 +1,30 @@
 .prizes {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap; /* To ensure it wraps nicely on smaller screens */
-  margin: 40px 0;
-  padding: 20px;
-  border-radius: 10px;
-  background: linear-gradient(to bottom right, #000000, #291f29); /* Gradient background */
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-}
-
-.prize-card {
-  background: #1c1c1c; /* Darker background for prize cards */
-  padding: 20px;
-  border: 1px solid #3a3a3a;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  width: 20%; /* Adjusted width */
-  margin: 10px; /* Margin between cards */
-  color: #f0f0f0; /* Light text color for readability */
-  position: relative;
-}
-
-.prize-card h3 {
-  color: #ff4081; /* Accent color for prize titles */
-  margin-bottom: 10px;
-  font-size: 1.5rem; /* Slightly larger font for titles */
-}
-
-.prize-card p {
-  color: #cccccc;
-  font-size: 1rem;
-  font-weight: bold; /* Bold text */
-  background: -webkit-linear-gradient(#53749e, #c1c5cb); /* Gradient text */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: relative;
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0% {
-    text-shadow: 0 0 5px rgba(255, 105, 180, 1), 0 0 10px rgba(255, 105, 180, 1), 0 0 15px rgba(255, 105, 180, 1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
   }
-  50% {
-    text-shadow: 0 0 20px rgba(255, 105, 180, 1), 0 0 30px rgba(255, 105, 180, 1), 0 0 40px rgba(255, 105, 180, 1);
-  }
-  100% {
-    text-shadow: 0 0 5px rgba(255, 105, 180, 1), 0 0 10px rgba(255, 105, 180, 1), 0 0 15px rgba(255, 105, 180, 1);
-  }
-}
-
-@media (max-width: 768px) {
+  
   .prize-card {
-    width: 45%;
-    margin: 10px 5px;
+    background-color: #1f2937; /* Tailwind CSS bg-gray-800 equivalent */
+    padding: 1rem; /* Tailwind CSS p-4 equivalent */
+    border-radius: 0.5rem; /* Tailwind CSS rounded-lg equivalent */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tailwind CSS shadow-lg equivalent */
+    color: #fff; /* Tailwind CSS text-white equivalent */
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
   }
-}
-
-@media (max-width: 480px) {
-  .prize-card {
-    width: 90%;
-    margin: 10px 0;
+  
+  .prize-card h3 {
+    font-size: 1.25rem; /* Tailwind CSS text-xl equivalent */
+    font-weight: 700; /* Tailwind CSS font-bold equivalent */
+    margin-bottom: 0.5rem; /* Tailwind CSS mb-2 equivalent */
   }
-}
+  
+  .prize-card p {
+    font-size: 0.875rem; /* Tailwind CSS text-sm equivalent */
+    line-height: 1.25rem; /* Tailwind CSS leading-5 equivalent */
+  }
+  
