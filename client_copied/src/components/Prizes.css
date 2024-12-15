@@ -1,0 +1,30 @@
+.prizes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
+  }
+  
+  .prize-card {
+    background-color: #1f2937; /* Tailwind CSS bg-gray-800 equivalent */
+    padding: 1rem; /* Tailwind CSS p-4 equivalent */
+    border-radius: 0.5rem; /* Tailwind CSS rounded-lg equivalent */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tailwind CSS shadow-lg equivalent */
+    color: #fff; /* Tailwind CSS text-white equivalent */
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .prize-card h3 {
+    font-size: 1.25rem; /* Tailwind CSS text-xl equivalent */
+    font-weight: 700; /* Tailwind CSS font-bold equivalent */
+    margin-bottom: 0.5rem; /* Tailwind CSS mb-2 equivalent */
+  }
+  
+  .prize-card p {
+    font-size: 0.875rem; /* Tailwind CSS text-sm equivalent */
+    line-height: 1.25rem; /* Tailwind CSS leading-5 equivalent */
+  }
+  
