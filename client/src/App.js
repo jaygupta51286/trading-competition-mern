@@ -42,38 +42,10 @@ function App() {
                 </section>
               </>
             } />
-            <Route path="/how-to-join" element={<InfoSection sectionId="how-to-join" title="How to Join the Competition" content={`No Registration Fee to participate the competition
-Participant should essentially have the account under the IB of the organizer 
-To Create account under IB of the organizer follow the below process:
-  Create an Account:
-  Exness:
-  Create New Account:
-  Click on the link: https://one.exnesstrack.net/a/721ebw05k3
-  Change IB Partner code: Use Partner Code: 721ebw05k3
-  Hantec Market:
-  Create New Account:
-  Click on the link: https://hmarkets.com/live-account-pre-registration/?cmp=6f6y5y2k&refid=13741&ent=hm
-  And follow the process to complete the registration.
-  For help follow process video How to create account or contact support link (telegram link)
-  Deposit: Fund your account with a minimum of $100 to be eligible for the competition.
-Kindly be noted: Only accounts created through above link and accounts under the organizer’s IB will be qualified to participate the competition.`} />}
-            />
-            <Route path="/competition-details" element={<InfoSection sectionId="competition-details" title="Competition Details" content={`Competition Start Date:
-Competition End Date:
-Result Declaration Date:
-Prize Distribution Date:`} />}
-            />
-            <Route path="/why-join" element={<InfoSection sectionId="why-join" title="Why Join?" content={`By Joining this event, 
-You will be having an opportunity to make your financial dreams true.
-You will be experiencing Trading emotions and can Improve your skills in a live market environment.
-The only event where participants are allowed to withdraw their profits with no conditions.
-The Only Event which is not bounded with any rules i.e. you can take any support from the community / Tools / Strategies / Team.`} />}
-            />
-            <Route path="/conditions" element={<InfoSection sectionId="conditions" title="Winning Criteria" content={`Make Highest Profit
-Make maximum withdrawals of the Profit (Count Wise and Amount Wise)
-All the participants who have made the profits with the round off the decimal values. (i.e. 100.01 to 100.50 will be considered 100 and 100.51-100.99 will be considered 101)
-All participants who are in the tie then maximum withdrawals will be considered to finalize the winner participant.`} />}
-            />
+            <Route path="/how-to-join" element={<InfoSection sectionId="how-to-join" title="How to Join the Competition" content={howToJoinContent} />} />
+            <Route path="/competition-details" element={<InfoSection sectionId="competition-details" title="Competition Details" content={competitionDetailsContent} />} />
+            <Route path="/why-join" element={<InfoSection sectionId="why-join" title="Why Join?" content={whyJoinContent} />} />
+            <Route path="/conditions" element={<InfoSection sectionId="conditions" title="Winning Criteria" content={conditionsContent} />} />
             <Route path="/step-one" element={<Step1Form />} />
             <Route path="/step-two" element={<StepTwoForm />} />
             <Route path="/step-three" element={<StepThreeForm />} />
@@ -88,5 +60,55 @@ All participants who are in the tie then maximum withdrawals will be considered 
     </Router>
   );
 }
+
+const howToJoinContent = `
+<h2>How to Join the Competition</h2>
+<ul>
+  <li><span class="emoji">🆓</span><p>No Registration Fee to participate in the competition</p></li>
+  <li><span class="emoji">👤</span><p>Participants should have an account under the IB of the organizer</p></li>
+  <li><span class="emoji">📝</span><p>To create an account under the IB of the organizer, follow the process below:</p></li>
+  <ul>
+    <li><span class="emoji">🔑</span><p>Create an Account:</p></li>
+    <ul>
+      <li><span class="emoji">🌐</span><p>Exness: <a href="https://one.exnesstrack.net/a/721ebw05k3" target="_blank">Create New Account</a> (Use Partner Code: 721ebw05k3)</p></li>
+      <li><span class="emoji">🌐</span><p>Hantec Market: <a href="https://hmarkets.com/live-account-pre-registration/?cmp=6f6y5y2k&refid=13741&ent=hm" target="_blank">Create New Account</a></p></li>
+      <li><span class="emoji">📹</span><p>For help, follow the process video "How to create account" or contact support [Telegram link]</p></li>
+    </ul>
+    <li><span class="emoji">💵</span><p>Deposit: Fund your account with a minimum of $100 to be eligible for the competition.</p></li>
+  </ul>
+  <p>⚠️ Kindly note: Only accounts created through the above links and under the organizer’s IB will be qualified to participate.</p>
+</ul>
+`;
+
+const competitionDetailsContent = `
+<h2>Competition Schedule</h2>
+<ul>
+  <li><span class="emoji">📅</span><p>Competition Start Date:</p></li>
+  <li><span class="emoji">📅</span><p>Competition End Date:</p></li>
+  <li><span class="emoji">📢</span><p>Result Declaration Date:</p></li>
+  <li><span class="emoji">🎁</span><p>Prize Distribution Date:</p></li>
+</ul>
+`;
+
+const conditionsContent = `
+<h2>Winning Criteria</h2>
+<ul>
+  <li><span class="emoji">💰</span><p>Make the Highest Profit</p></li>
+  <li><span class="emoji">💸</span><p>Make maximum withdrawals of the Profit (Count and Amount Wise)</p></li>
+  <li><span class="emoji">🔢</span><p>Profits with round-off decimal values (e.g., 100.01 to 100.50 = 100; 100.51 to 100.99 = 101)</p></li>
+  <li><span class="emoji">🏆</span><p>In case of a tie, maximum withdrawals will determine the winner.</p></li>
+</ul>
+`;
+
+const whyJoinContent = `
+<h2>Why Join?</h2>
+<p>By joining this event, you will:</p>
+<ul>
+  <li><span class="emoji">🎯</span><p>Have an opportunity to make your financial dreams come true.</p></li>
+  <li><span class="emoji">📈</span><p>Experience trading emotions and improve your skills in a live market environment.</p></li>
+  <li><span class="emoji">🔓</span><p>Participate with no restrictions on withdrawing your profits.</p></li>
+  <li><span class="emoji">🤝</span><p>Join an event with no rules, allowing support from the community, tools, strategies, and team.</p></li>
+</ul>
+`;
 
 export default App;

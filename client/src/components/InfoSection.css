@@ -1,23 +1,138 @@
-.info-section {
-  background: linear-gradient(to bottom right, #1c1c1c, #333333); /* Gradient background */
-  padding: 20px;
-  border-radius: 10px;
-  margin: 20px;
+/* InfoSection.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: linear-gradient(#000000, #291f29); /* Gradient background */
+  font-family: 'Roboto', sans-serif;
   color: #f0f0f0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.info-section h2 {
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.info-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient( #000000, #291f29); /* Gradient background */
+  padding: 30px;
+  font-family: 'Roboto', sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.card {
+  background: linear-gradient(to bottom right, #2c2c2c, #444444); /* Card gradient background */
+  padding: 30px;
+  border-radius: 15px;
+  color: #f0f0f0;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.9);
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto; /* Center the card */
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 0 35px rgba(0, 0, 0, 1);
+}
+
+.card h2 {
   color: #ff4081; /* Highlight color */
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 28px;
+  text-align: center;
 }
 
-.info-section .content p {
+.card p, .card ul {
   color: #cccccc;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.card ul ul {
+  padding-left: 20px;
+}
+
+.card ul li {
+  display: flex;
+  align-items: center;
   margin-bottom: 10px;
 }
 
-.info-section .content p::before {
-  content: "• "; /* Bullet point */
-  color: #ff4081; /* Highlight color for bullet point */
+.card ul li::before {
+  content: ""; /* Remove default bullet */
+}
+
+.card ul li span.emoji {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.card ul li p {
+  margin-left: 0;
+  flex: 1;
+}
+
+a {
+  color: #ff4081;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .info-section {
+    padding: 20px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .card h2 {
+    font-size: 24px;
+  }
+
+  .card p, .card ul {
+    font-size: 16px;
+  }
+
+  .card ul li {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .card ul li span.emoji {
+    margin-right: 10px;
+  }
+
+  .card ul li p, .card ul li a {
+    margin-left: 0;
+  }
 }

@@ -80,6 +80,7 @@ const LeaderboardAdminPage = () => {
             <tr>
               <th>Rank</th>
               <th>Name</th>
+              <th>Profit</th>
             </tr>
           </thead>
           <tbody>
@@ -87,6 +88,7 @@ const LeaderboardAdminPage = () => {
               <tr key={index}>
                 <td>{entry.Rank}</td>
                 <td>{entry.Name}</td>
+                <td>{entry.Profit}</td>
               </tr>
             ))}
           </tbody>

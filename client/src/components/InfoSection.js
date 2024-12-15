@@ -2,13 +2,15 @@ import React from 'react';
 import './InfoSection.css';
 
 const InfoSection = ({ sectionId, title, content }) => {
+  const formatContent = (text) => {
+    return <div dangerouslySetInnerHTML={{ __html: text }} />;
+  };
+
   return (
     <section id={sectionId} className="info-section">
-      <h2>{title}</h2>
-      <div className="content">
-        {content.split('\n').map((line, index) => (
-          <p key={index}>{line}</p>
-        ))}
+      <div className="card">
+        {/* <h2>{title}</h2> */}
+        {formatContent(content)}
       </div>
     </section>
   );
